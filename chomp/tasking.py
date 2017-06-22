@@ -18,7 +18,7 @@ class Tasking():
     REQUEUE_STATE = "chomp-queue"
 
     def __init__(self):
-        self.client = Client(key=config.STAFFJOY_API_KEY, env=config.ENV)
+        self.client = Client(key=config.STAFFJOY_API_KEY, env=config.ENV, url_base="https://staffjoy.partnerhero.com/api/v2/")
         self.default_tz = pytz.timezone(config.DEFAULT_TZ)
 
         # To be defined later
