@@ -1,0 +1,9 @@
+{
+  "name": "chomp-decomposition",
+  "version": "1.0.0",
+  "description": "Shift forecasting microservice for staffjoy.",
+  "scripts": {
+    "torus": "torus run -- node -i",
+    "deploy": "torus run -- now -t $PH_ZEIT_KEY -f -e ENV -e STAFFJOY_API_KEY -e SYSLOG_SERVER"
+  }
+}
